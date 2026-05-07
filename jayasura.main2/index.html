@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JayaSurya - Frontend Developer & Data Science Specialist | AI/ML Projects | Full-Stack Web Development">
+    <meta name="theme-color" content="#000">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="JayaSurya - Developer & Data Scientist">
+    <meta property="og:description" content="Frontend Developer specializing in Data Science, AI, and full-stack web development.">
+    <meta property="og:type" content="website">
+    
+    <title>JayaSurya - Frontend Developer & Data Science</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="mylogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <style>
+        /* Cursor Styles */
+        * {
+            cursor: none;
+        }
+
+        body {
+            cursor: none;
+        }
+
+        /* Main Cursor */
+        .cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle at 30% 30%, rgba(0, 212, 255, 0.8), rgba(79, 157, 255, 0.4));
+            border: 2px solid rgba(0, 212, 255, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 10000;
+            mix-blend-mode: screen;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5), inset 0 0 10px rgba(0, 212, 255, 0.3);
+            transform: translate(-50%, -50%);
+        }
+
+        .cursor.active {
+            width: 30px;
+            height: 30px;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.8), inset 0 0 15px rgba(0, 212, 255, 0.5);
+            border-color: rgba(0, 212, 255, 1);
+        }
+
+        /* Cursor Trail */
+        .cursor-trail {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: rgba(0, 212, 255, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: screen;
+        }
+
+        /* Hover State - Make regular elements interactive */
+        a:hover, button:hover, .btn:hover, .nav-link:hover, .project-card:hover, 
+        .tech-card:hover, .contact-card:hover, .info-card:hover, .timeline-content:hover {
+            cursor: none;
+        }
+
+        /* Custom cursor for specific elements */
+        a, button, .btn, .nav-link, .project-card, .tech-card, .contact-card, 
+        .info-card, .timeline-content {
+            cursor: none;
+        }
+    </style>
+</head>
+  
+<body>
+
+<!-- HEADER & NAVIGATION -->
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i> JayaSurya
+            </div>
+            <ul class="navlist">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="moonlit-meadow-moewalls-com.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content fade-up">
+        <h1>Hi, I'm <span>JayaSurya</span></h1>
+        <p class="subtitle">Frontend Developer | Data Science Enthusiast | AI Builder</p>
+        <p class="tagline">Building intelligent web applications that solve real-world problems</p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-secondary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <a href="VANAMALA JAYASURYA main.pdf" class="btn btn-secondary" download>
+                <i class="fas fa-download"></i> Resume
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-image fade-right">
+        <img src="j2.png" alt="JayaSurya - Developer">
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+    <video autoplay muted loop playsinline class="about-bg-video">
+        <source src="green-forest-river-train-moewalls-com.mp4" type="video/mp4">
+    </video>
+    <div class="about-overlay"></div>
+
+    <div class="about-container">
+        <div class="about-content fade-left">
+            <span class="section-tag">About Me</span>
+            <h2>Computer Science Student | Data Science Specialist</h2>
+
+            <p class="about-text">
+                I'm a Computer Science student at Pallavi Engineering College specializing in Data Science. 
+                I combine deep technical expertise in <strong>AI/ML</strong> and <strong>full-stack web development</strong> 
+                to build intelligent applications. My experience spans from <strong>NLP models</strong> and <strong>data analysis</strong> 
+                to responsive frontend design with modern frameworks.
+            </p>
+
+           
+        </div>
+
+        <div class="card fade-right">
+            <img src="WhatsApp Image 2026-02-26 at 5.31.44 PM.jpeg" alt="Profile">
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SKILLS SECTION ==================== -->
+<section id="skills" class="skills">
+    <video autoplay muted loop playsinline class="skills-bg-video">
+        <source src="hacker-room-rainy-night-moewalls-com.mp4" type="video/mp4">
+    </video>
+    <div class="skills-overlay"></div>
+ 
+    <div class="skills-content">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Tools and technologies I work with</p>
+ 
+        <div class="skills-grid">
+            <div class="tech-card">
+                <div class="tech-card-inner">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Semantic markup & modern styling</p>
+                </div>
+            </div>
+ 
+            <div class="tech-card">
+                <div class="tech-card-inner">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, async/await</p>
+                </div>
+            </div>
+ 
+            <div class="tech-card">
+                <div class="tech-card-inner">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Data Science, ML, Flask backends</p>
+                </div>
+            </div>
+ 
+            <div class="tech-card">
+                <div class="tech-card-inner">
+                    <i class="fab fa-figma"></i>
+                    <h3>Figma</h3>
+                    <p>UI/UX design & prototyping</p>
+                </div>
+            </div>
+ 
+            <div class="tech-card">
+                <div class="tech-card-inner">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Component-based UI development</p>
+                </div>
+            </div>
+ 
+            <div class="tech-card">
+                <div class="tech-card-inner">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & ML</h3>
+                    <p>NLP, Data Analysis, Pandas/NumPy</p>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-inner">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Tools</h3>
+                    <p>Power BI, Excel, Data Visualization</p>
+                </div>
+        </div>
+
+        <div class="tech-card">
+            <div class="tech-card-inner">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud & Deployment</h3>
+                <p>Vercel, Heroku, GitHub Pages</p>                                                                                                                             
+            </div>
+        </div>
+          
+    </div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+
+        <!-- Background Video -->
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="david-x-lucy-neon-afterglow-cyberpunk-edgerunners-moewalls-com.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay (for readability) -->
+    <div class="video-overlay"></div>
+
+    <div class="projects-content">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Innovative solutions built with modern tech</p>
+
+        <div class="projects-grid">
+            <!-- Project 1: AI Resume Analyzer -->
+            <article class="project-card fade-up">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>AI Career Guidance & Resume Analyzer</h3>
+                </div>
+                
+                <p class="project-description">
+                    Intelligent AI-powered platform that analyzes resumes using NLP to calculate ATS compatibility scores 
+                    and generate personalized career roadmaps. Bridges the gap between candidate profiles and industry requirements.
+                </p>
+
+                <div class="project-details">
+                    <div class="detail">
+                        <span class="label">Tech Stack</span>
+                        <span class="value">Python, Flask, NLP, JavaScript</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Features</span>
+                        <span class="value">Resume parsing, ATS scoring, Career recommendations</span>
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span class="badge">AI/ML</span>
+                    <span class="badge">NLP</span>
+                    <span class="badge">Full-Stack</span>
+                    <span class="badge">Python</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://ai-career-guide-jet.vercel.app/" 
+                    class="link-btn project-link">
+                    View Project
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project 2: Meal Monarch -->
+            <article class="project-card fade-up" style="animation-delay: 0.1s;">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Meal Monarch - Nutritional Chatbot</h3>
+                </div>
+                
+                <p class="project-description">
+                    Full-stack conversational AI application for nutritional guidance. Leverages natural language processing 
+                    to provide personalized meal recommendations and dietary insights in real-time.
+                </p>
+
+                <div class="project-details">
+                    <div class="detail">
+                        <span class="label">Tech Stack</span>
+                        <span class="label">Python, Flask, React, AI/ML</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Type</span>
+                        <span class="value">Chatbot Application</span>
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span class="badge">Chatbot</span>
+                    <span class="badge">NLP</span>
+                    <span class="badge">React</span>
+                    <span class="badge">Full-Stack</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://meal-monarch.vercel.app/" class="link-btn project-link">
+                        View Project
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- Project 3: IIT Hyderabad Web Project -->
+            <article class="project-card fade-up" style="animation-delay: 0.2s;">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Responsive Web Solutions - IIT Hyderabad</h3>
+                </div>
+                
+                <p class="project-description">
+                    During my internship at IIT Hyderabad (Apr-May 2025), I developed responsive web interfaces 
+                    implementing modern web standards and UI/UX best practices for optimal user experience.
+                </p>
+
+                <div class="project-details">
+                    <div class="detail">
+                        <span class="label">Organization</span>
+                        <span class="value">IIT Hyderabad - CSE Department</span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Duration</span>
+                        <span class="value">2 Months (Apr-May 2025)</span>
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Bootstrap</span>
+                </div>
+
+                <div class="project-links">
+                   <a href="Experience_Letter_Intern_JayaSurya.pdf" class="link-btn project-link">  View Experience Letter</a>
+                </div>
+            </article>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="experience">
+
+        <!-- Background Video -->   
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="mount-fuji-sunset-moewalls-com.mp4" type="video/mp4">
+    </video>    
+
+    <div class="experience-content">
+        <h2 class="section-title">Experience & Internships</h2>
+        <p class="section-subtitle">Professional growth and real-world applications</p>
+
+        <div class="timeline">
+            <!-- IIT Experience -->
+            <div class="timeline-item fade-left">
+                <div class="timeline-marker">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Web Development Intern</h3>
+                    <p class="company">
+                        <strong>Indian Institute of Technology (IIT), Hyderabad</strong> | 
+                        <em>Apr 2025 – May 2025</em>
+                    </p>
+                    <ul class="experience-points">
+                        <li>Developed responsive web interfaces using HTML5, CSS3, and JavaScript</li>
+                        <li>Implemented jQuery for enhanced interactivity and DOM manipulation</li>
+                        <li>Built Bootstrap-based layouts ensuring cross-device compatibility</li>
+                        <li>Collaborated with CSE department on technical web solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- VISWAM.AI Experience -->
+            <div class="timeline-item fade-right">
+                <div class="timeline-marker">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Summer AI Intern</h3>
+                    <p class="company">
+                        <strong>VISWAM.AI x Meta x Swecha Telangana</strong> | 
+                        <em>Jun 2025 – Jul 2025</em>
+                    </p>
+                    <ul class="experience-points">
+                        <li>Gained hands-on experience in AI/ML fundamentals and model development</li>
+                        <li>Focused on building AI solutions for social impact in the Global South</li>
+                        <li>Worked in large-scale ecosystem for model deployment and data ethics</li>
+                        <li>Collaborated on cutting-edge AI applications with industry standards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Galactix Solutions Experience -->
+
+            <div class="timeline-item fade-left">
+    <div class="timeline-marker">
+        <i class="fas fa-briefcase"></i>
+    </div>
+
+    <div class="timeline-content">
+        <h3>Data Analyst Intern</h3>
+
+        <p class="company">
+            <strong>Galactix Solutions Pvt Ltd</strong> | 
+            <em>Apr 2026 – May 2026</em>
+        </p>
+
+        <ul class="experience-points">
+            <li>Collected, cleaned, and processed data from multiple sources including databases, APIs, and Excel</li>
+            <li>Performed Exploratory Data Analysis (EDA) to identify patterns, trends, and actionable insights</li>
+            <li>Built interactive dashboards using Power BI to automate reporting and improve visualization</li>
+            <li>Worked on eCommerce and financial datasets to support business decision-making</li>
+            <li>Used Excel (pivot tables, formulas) and basic Python for data analysis workflows</li>
+            <li>Collaborated with team members on reporting, validation, and data-driven solutions</li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+
+            <!-- Background Video -->
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="spider-man-symbiote-moewalls-com.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay (for readability) -->
+    <div class="video-overlay"></div>
+
+    <div class="contact-content">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm always interested in new projects and opportunities</p>
+
+        <div class="contact-methods">
+            <a href="mailto:vanamalajayasurya126@gmail.com" class="contact-card fade-up">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>vanamalajayasurya126@gmail.com</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vanmala-jayasurya-5b1138324" target="_blank" rel="noopener noreferrer" class="contact-card fade-up" style="animation-delay: 0.1s;">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>Connect with me professionally</p>
+            </a>
+
+            <a href="tel:+919948876071" class="contact-card fade-up" style="animation-delay: 0.2s;">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 9948876071</p>
+            </a>
+
+            <a href="VANAMALA_JAYASURYA_main.pdf" download class="contact-card fade-up" style="animation-delay: 0.3s;">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Resume</h3>
+                <p>Download my CV</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 JayaSurya. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vanmala-jayasurya-5b1138324" aria-label="LinkedIn" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/vanamalajayasurya" aria-label="GitHub" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:vanamalajayasurya126@gmail.com" aria-label="Email" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://x.com/VanamalaJayasu1" aria-label="Twitter" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/jay._surya/" aria-label="Instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<!-- LOADER -->
+<div id="page-loader" class="loader-wrapper">
+    <div class="wheel-and-hamster">
+        <div class="wheel"></div>
+        <div class="hamster">
+            <div class="hamster__body">
+                <div class="hamster__head">
+                    <div class="hamster__ear"></div>
+                    <div class="hamster__eye"></div>
+                    <div class="hamster__nose"></div>
+                </div>
+                <div class="hamster__limb hamster__limb--fr"></div>
+                <div class="hamster__limb hamster__limb--fl"></div>
+                <div class="hamster__limb hamster__limb--br"></div>
+                <div class="hamster__limb hamster__limb--bl"></div>
+                <div class="hamster__tail"></div>
+            </div>
+        </div>
+        <div class="spoke"></div>
+    </div>
+</div>
+<!-- CURSOR ANIMATION -->
+<div class="cursor"></div>
+
+<!-- SCRIPT -->
+ <script src="script.js"></script>
+
+</body>
+</html>
